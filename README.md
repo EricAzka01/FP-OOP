@@ -2,6 +2,8 @@
 Eric Azka Nugroho
 5025211064
 
+To see my progress on this project, you must select MASTER BRANCH. 
+
 Applied Topic in My Program:
 
 1. Casting/Conversion
