@@ -15,11 +15,12 @@ public class Form extends JFrame{
     private JButton calculateButton;
     private JButton resetButton1;
     private JButton calculateButton1;
+    private JButton receiptButton;
     private JLabel Welcome;
 
     public Form() {
         setContentPane(welcome);
-        setTitle("ALOHA");
+        setTitle("WELCOME!");
         setSize(450, 300);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setVisible(true);
@@ -37,6 +38,7 @@ public class Form extends JFrame{
                 coladefault = 3.00;
                 waterdefault = 2.00;
 
+                //Casting or Conversion
                 burger = Double.parseDouble(nburger.getText());
                 pizza = Double.parseDouble(npizza.getText());
                 cola = Double.parseDouble(ncola.getText());
@@ -55,6 +57,15 @@ public class Form extends JFrame{
                 nwater.setText("");
                 ncola.setText("");
                 nresult.setText("");
+            }
+        });
+        receiptButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(e.getSource() == receiptButton){
+                    Receipt receiptForm = new Receipt();
+
+                }
             }
         });
     }
