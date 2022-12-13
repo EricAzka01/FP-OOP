@@ -1,6 +1,9 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 
 public class Form extends JFrame{
     private JPanel panel1;
@@ -19,6 +22,7 @@ public class Form extends JFrame{
     private JLabel Welcome;
 
     double burgerdefault, pizzadefault, coladefault, waterdefault, burger, pizza, cola, water, result;
+    private final File data = new File("data.txt");
 
 
     public Form() {
@@ -66,13 +70,38 @@ public class Form extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 if(e.getSource() == receiptButton){
-                    Receipt receiptForm = new Receipt();
+                    new Thread(() -> {
+                        try {
+                            FileWriter fileWriter = new FileWriter(data, true);
+                            PrintWriter printWriter = new PrintWriter(fileWriter, false);
 
+                            double a = burger*burgerdefault;
+                           String str = Double.toString(a);
+                           double b = pizza * pizzadefault;
+                            String str1 = Double.toString(b);
+                            double c = water * waterdefault;
+                            String str2 = Double.toString(c);
+                            double d = cola * coladefault;
+                            String str3 = Double.toString(d);
+                            String str4 = Double.toString(result);
+
+                            printWriter.println(str + ":" + str1 + ":" + str2 + ":" + str3 + ":"  + str4);
+
+                            printWriter.close();
+                        } catch (Exception ignored) {
+                            ignored.printStackTrace();
+                        }
+                    }).start();
+
+                    Receipt receiptForm = new Receipt();
                 }
+
+
             }
         });
 
     }
+
 
 
     public static void main(String[] args) {

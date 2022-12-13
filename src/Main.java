@@ -6,13 +6,13 @@ Constructor (In every class)
 Overloading
 Overriding (In Menu)
 Encapsulation (Employee Name and Password)
-Inheritance
+Inheritance (MenuDrinks)
 Polymorphism
 ArrayList (List of Employee)
 Exception Handling (Try and Catch)
 GUI (Form)
 Interface (Menu)
-Abstract Class
+Abstract Class (Menu Drinks)
 Generics (In Employee)
 Collection
 Input Output (Form)
@@ -22,24 +22,22 @@ Input Output (Form)
 
 
 public class Main{
-    Food burger = new Food("Burger", 15.00);
-    Food pizza = new Food("Pizza", 10.00);
-    Food water = new Food("Water", 2.00);
-    Food cola = new Food("Cola", 3.00);
 
     public static void main(String[] args) {
 
         try {
-            Menu.restaurant myrestaurant = new Menu.restaurant();
+            MenuFood.restaurant myrestaurant = new MenuFood.restaurant();
 
             Form myform = new Form();
+            drink mydrinks = new drink();
 
             System.out.println("Employee Who's Taking Your Order: ");
             Employee.employeee<String> employee1 = new Employee.employeee<String>("Bobby\n");
             System.out.println(employee1.getEmployeename());
 
             myrestaurant.food();
-            myrestaurant.drinks();
+            mydrinks.drinks();
+
         }
             catch(Exception e){
                 System.out.println("Case of Exception: " + e);
@@ -47,7 +45,8 @@ public class Main{
         }
 
 
-    }
+
+}
 
 
 
