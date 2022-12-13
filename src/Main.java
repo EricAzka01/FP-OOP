@@ -14,7 +14,7 @@ GUI (Form)
 Interface (Menu)
 Abstract Class (Menu Drinks)
 Generics (In Employee)
-Collection
+Collection (WELCOME)
 Input Output (Form)
 
 
@@ -22,6 +22,7 @@ Input Output (Form)
 
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Main{
@@ -35,6 +36,17 @@ public class Main{
             FoodDescription myfooddesc = new FoodDescription();
             FoodDescription myburger = new Burger();
             FoodDescription mypizza = new Pizza();
+
+        ArrayList<String> list1 = new ArrayList<>();
+        list1.add("W");
+        list1.add("E");
+        list1.add("L");
+        list1.add("C");
+        list1.add("O");
+        list1.add("M");
+        list1.add("E");
+        System.out.println(" " + list1);
+        Collections.sort(list1);
 
             Form myform = new Form();
             drink mydrinks = new drink();
