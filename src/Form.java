@@ -18,6 +18,9 @@ public class Form extends JFrame{
     private JButton receiptButton;
     private JLabel Welcome;
 
+    double burgerdefault, pizzadefault, coladefault, waterdefault, burger, pizza, cola, water, result;
+
+
     public Form() {
         setContentPane(welcome);
         setTitle("WELCOME!");
@@ -31,7 +34,7 @@ public class Form extends JFrame{
                 //Pizza = 10.00
                 //Water = 2.00
                 //Cola = 3.00
-                double burgerdefault, pizzadefault, coladefault, waterdefault, burger, pizza, cola, water, result;
+
 
                 burgerdefault = 15.00;
                 pizzadefault = 10.00;
@@ -68,7 +71,9 @@ public class Form extends JFrame{
                 }
             }
         });
+
     }
+
 
     public static void main(String[] args) {
 
