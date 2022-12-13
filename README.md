@@ -4,6 +4,9 @@ Eric Azka Nugroho
 
 To see my progress on this project, you must select MASTER BRANCH. 
 
+[IMPORTANT NOTES]
+There are few classes that I actually dont use, because it is not efficient. The classes that are not used -> (Calculation.java, Drinks.java, Food.java, and restaurant.java)
+
 Applied Topic in My Program:
 
 1. Casting/Conversion
