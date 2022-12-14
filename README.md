@@ -1,11 +1,15 @@
-# FP-OOP
+**# FP-OOP
 Eric Azka Nugroho
-5025211064
+5025211064**
 
 To see my progress on this project, you must select MASTER BRANCH. 
 
 [IMPORTANT NOTES]
 There are few classes that I actually dont use, because it is not efficient. The classes that are not used -> (Calculation.java, Drinks.java, and restaurant.java)
+
+REFERENCES:
+1. Oracle Fundamental Programming (Where I implemented the OOP Materials into my Program)
+2. https://www.youtube.com/watch?v=oxSlUFGx-SM (Tutorial how to create GUI Form in Intellij)
 
 Applied Topic in My Program:
 
